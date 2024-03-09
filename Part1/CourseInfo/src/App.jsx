@@ -8,8 +8,6 @@ const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
 
-  const sentences = 3
-
   return (
     <>
       < Header sentence = {course} />
@@ -40,10 +38,19 @@ const Content = (Contentprops) =>
 {
   return (
     <>
-      <p> {Contentprops.sentence1} {Contentprops.number1} </p>
-      <p> {Contentprops.sentence2} {Contentprops.number2} </p>
-      <p> {Contentprops.sentence3} {Contentprops.number3} </p>
+      < Part sentence = {Contentprops.sentence1}  number={Contentprops.number1} />
+      < Part sentence = {Contentprops.sentence2}  number={Contentprops.number2} />
+      < Part sentence = {Contentprops.sentence3}  number={Contentprops.number3} />
     </>
+  )
+}
+
+
+
+const Part = (Partprops) =>
+{
+  return (
+    <p> {Partprops.sentence} {Partprops.number} </p>
   )
 }
 
