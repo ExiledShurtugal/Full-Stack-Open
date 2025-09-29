@@ -5,3 +5,6 @@
 4- npm install
 5- npm run dev
 6- localhost 5173
+
+5.1- D:
+5.2- cd Projects\Full-Stack-Open
