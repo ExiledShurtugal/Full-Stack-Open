@@ -31,14 +31,17 @@ const App = () => {
 
   return (
     <div>
+      <h1>Anecdote of the day</h1>
+
       {anecdotes[selected]}<br />
-      has {votes[selected]} votes<br />
-      
+      has {votes[selected]} votes<br />      
   {/* <Button text="Vote" onClick={() => HandleVote()} /> */}
-      <Button text="Vote" onClick={() => setVotes(votes.map((vote, index) => index === selected ? vote + 1 : vote))} />
-      
+      <Button text="Vote" onClick={() => setVotes(votes.map((vote, index) => index === selected ? vote + 1 : vote))} />      
       <Button text="Next Anecdote" onClick={() => setSelected(Math.floor(Math.random() * anecdotes.length))} />
-    
+
+      <h1>Anecdote with most votes</h1>
+      {anecdotes[votes.indexOf(Math.max(...votes))]}
+
       {console.log(votes)}
     </div>
   )
