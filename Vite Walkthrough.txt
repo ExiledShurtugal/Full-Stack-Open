@@ -1,0 +1,7 @@
+1- Open terminal
+2- Go into folder WHERE you want to build a project FOLDER ( GO PARENT FOLDER )
+3- npm create vite@latest folderName -- --template react ( folderName without spaces )
+3.1- if not working: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+4- npm install
+5- npm run dev
+6- localhost 5173
